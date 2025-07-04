@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   // Yazı animasyonu
-  const texts = ["bir backend geliştiriciyim...", "bir frontend geliştiriciyim...", "bir mobil geliştiriciyim..."];
+  const texts = ["bir backend geliştiriciyim..", "bir frontend geliştiriciyim...", "bir mobil geliştiriciyim..."];
   let textIndex = 0, charIndex = 0, isDeleting = false;
   const animatedText = () => document.getElementById("animated-text");
   

@@ -106,7 +106,7 @@ section {
 .menu-icon {
     position: fixed;
     top: auto;
-    right: auto;
+    right: 20px;
     z-index: 1001;
     font-size: 2.5rem;
     cursor: pointer;

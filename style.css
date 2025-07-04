@@ -752,14 +752,16 @@ display: none;
 
       }
 
+      .navbar.active a {
+        font-size: 3rem;
+        margin-left: 2.5rem;
+      }
+
     .header {
         padding: 2rem 4%;
       }
 
-      .navbar a {
-        font-size: 1.5rem;
-        margin-left: 2.5rem;
-      }
+
     .home {
       gap: 5rem; 
     }
@@ -841,10 +843,7 @@ display: none;
             font-size: 1.4rem;
         }
 
-      .navbar a {
-        font-size: 1.3rem;
-        margin-left: 1.5rem;
-      }
+
     .header {
         padding: 2rem 4%;
       }
@@ -880,11 +879,6 @@ display: none;
     
     .header {
         padding: 2rem 3%;
-      }
-
-      .navbar a {
-        font-size: 1.2rem;
-        margin-left: 1.5rem;
       }
 
     html {

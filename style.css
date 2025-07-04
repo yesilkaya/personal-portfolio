@@ -105,7 +105,7 @@ section {
 
 .menu-icon {
     position: fixed;
-    top: auto;
+    top: 20px;
     right: 20px;
     z-index: 1001;
     font-size: 2.5rem;
@@ -927,45 +927,6 @@ display: none;
     }
     .home-img {
         transform: scale(0.8);
-    }
-  }
-  
-  @media (max-width:510px) {
-    .navbar a {
-      font-size: 1.1rem;
-      margin-left: 1rem;
-    }
-
-
-    .social-icons a {
-      margin: 1rem 1rem 1rem 0;
-      width: 3rem;
-      height: 3rem;
-      font-size: 2rem;
-    }
-  
-    .footer .social a {
-      width: 28px;
-      height: 28px;
-      font-size: 18px;
-      line-height: 28px;
-    }
-  
-    .footer ul li a {
-      font-size: 1.2rem;
-    }
-  
-    .footer .copyright {
-      font-size: 11px;
-    }
-
-    .home-content h1 {
-      font-size: 4rem;
-    }
-
-    .btn {
-      font-size: 1.6rem;
-      margin: 1rem 0;
     }
   }
 /* Media Queries End*/

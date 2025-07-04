@@ -1,0 +1,70 @@
+🔹 What is the difference semantic and non-semantic tags
+    - Semantic tags clearly define the meaning of their content in a way that is understandable both to developers and browsers. Examples include <header>, <footer>, <article>, and <section>. Non-semantic tags, like <div> and <span>, do not convey any specific meaning about their content and are used primarily for styling or grouping elements.
+
+🔹 JavaScript Callbacks Nedir?
+    - Callback, başka bir fonksiyona parametre olarak geçirilen bir fonksiyondur.
+Yani:
+"Ben işimi bitirdikten sonra bunu çağır" demektir.
+Bu, özellikle senkron olmayan (asynchronous) işlemlerde önemlidir, çünkü bir işlem bittiğinde sonrasında yapılacak iş olarak başka bir fonksiyon çağrılır.
+
+🔹 DOM (Document Object Model) Nedir?
+HTML DOM, web sayfası yüklendiğinde tarayıcı tarafından oluşturulan nesne tabanlı (object-based) bir ağaç yapısıdır.
+
+ - document
+ └── html
+     ├── head
+     │   └── title
+     └── body
+         ├── h1
+         └── p
+
+1. Bir öğeye erişme:
+ - let baslik = document.getElementById("baslik1");
+2. Bir öğenin içeriğini değiştirme:
+ - baslik.innerHTML = "Yeni Başlık!";
+3. Yeni bir öğe oluşturma ve ekleme:
+ - let yeniP = document.createElement("p");
+    yeniP.textContent = "Yeni bir paragraf eklendi.";
+    document.body.appendChild(yeniP);
+4. Bir öğeyi silme:
+    let silinecek = document.getElementById("paragraf1");
+    silinecek.remove();
+
+Her HTML öğesi, DOM'da bir nesne (object) olarak temsil edilir. Bu nesnenin:
+Özellikleri (properties) vardır → değer tutar
+Yöntemleri (methods) vardır → işlem yapar
+
+img.src = "yeniresim.jpg";         // Property → resim kaynağını değiştirir
+img.setAttribute("alt", "Açıklama"); // Method → 'alt' attribute'u ekler
+
+🔹 BOM, tarayıcıların JavaScript'e sunduğu yapılar aracılığıyla tarayıcının kendisini kontrol etmemizi sağlayan bir modeldir.
+ BOM, HTML belgesi dışındaki her şeyle ilgilidir — yani:
+Tarayıcı penceresi
+Sekme
+URL
+Gezinme geçmişi
+Zamanlayıcılar (setTimeout, setInterval)
+Pencere açma/kapama
+Konum (location)
+Ekran bilgileri
+
+
+🔹 Web API Nedir?
+Web API (Web Application Programming Interface), genel olarak internet üzerinden başka bir uygulamayla (genellikle bir sunucuyla) iletişim kurmanı sağlayan arabirimdir.
+
+🔹 Browser API Nedir?
+Browser API, tarayıcının kendisinin sağladığı ve JavaScript ile erişilebilen fonksiyonlardır. Bu API'ler, tarayıcıda çalışan web uygulamalarının donanıma veya tarayıcı özelliklerine erişmesini sağlar.
+ - Geolocation API (konum verisi)
+
+
+🔹 AJAX Nedir?
+Bir web sayfası yüklendikten sonra, web sunucusundan veri okumak için kullanılır.
+
+Sayfayı yenilemeden içeriği güncellemeye olanak sağlar.
+
+Arka planda web sunucusuna veri göndermeyi mümkün kılar.
+
+🔹 jQuery
+jQuery, eski tarayıcı uyumsuzluklarını kolayca yönetmek için geliştirilmiş bir kütüphane iken, modern JavaScript (ES5 ve sonrası) çoğu jQuery işlevini native yöntemlerle basit ve hızlı şekilde yapmayı sağlar.
+    -jQuery -> $("#myDiv").text("Merhaba Dünya!");
+    -Vanilla JavaScript: -> document.getElementById("myDiv").textContent = "Merhaba Dünya!";

@@ -104,14 +104,15 @@ section {
 }
 
 .menu-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1001;
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: var(--primary-color);
-    display: none;
+  position: fixed;
+  top: 50%; /* Dikeyde ortalamak için */
+  right: 20px; /* Sağdan mesafe */
+  transform: translateY(-50%); /* Dikeyde tam ortalamak için */
+  z-index: 1001;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  display: none;
 }
 
 /* Header Styles */

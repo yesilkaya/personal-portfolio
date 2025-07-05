@@ -208,3 +208,31 @@ document.addEventListener("DOMContentLoaded", () => {
   .catch(err => {
     console.error("Hizmetler yüklenemedi:", err);
   });
+
+
+  const customAlert = document.getElementById('customAlert');
+  const closeAlertBtn = document.getElementById('closeAlert');
+
+  closeAlertBtn.addEventListener('click', () => {
+    customAlert.style.display = 'none';
+  });
+
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const subject = document.getElementById('subject').value.trim() || 'İletişim Formu';
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !phone || !message) {
+      // klasik alert yerine modal göster
+      customAlert.style.display = 'flex';
+      return;
+    }
+
+    const mailtoLink = `mailto:seninmailin@ornek.com?subject=${encodeURIComponent(subject)}&body=Ad:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0ATelefon:%20${encodeURIComponent(phone)}%0AMesaj:%20${encodeURIComponent(message)}`;
+
+    window.open(mailtoLink, '_blank');
+  });

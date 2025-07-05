@@ -117,6 +117,45 @@ section {
 
 /* Header Styles */
 
+/* Dialog Style */
+#customAlert {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+#customAlert .alert-box {
+  background: var(--second-bg-color);
+  padding: 20px 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+#customAlert .alert-box h3 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: var(--primary-color);
+} 
+#customAlert .alert-box p {
+  font-size: 1.5rem;
+} 
+#customAlert .alert-box button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  background-color:var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  margin: 3rem 2rem;
+}
+
+/* Dialog Style End*/
+
 /* Home Starts */
 
 .home {
@@ -733,6 +772,10 @@ display: none;
         display: flex; /* ikon görünsün */
       }
 
+      .logo {
+        font-size: 2rem;
+      }
+
       .navbar {
         display: none; /* menü bağlantılarını gizle */
         flex-direction: column;
@@ -752,13 +795,13 @@ display: none;
 
       }
 
-      .navbar.active a {
-        font-size: 3rem;
+      .navbar a {
+        font-size: 2.5rem;
         margin-left: 2.5rem;
       }
 
     .header {
-        padding: 2rem 4%;
+        padding: 2.5rem 4%;
       }
 
 
@@ -812,7 +855,7 @@ display: none;
     }
 
     .timeline-items::before {
-      left: 7px; 
+      left: 9px; 
     }
 
     .timeline-item:nth-child(odd) {
@@ -826,7 +869,7 @@ display: none;
       }
 
       .timeline-dot {
-        left: 0; 
+        left: 0px; 
       }
   }
   
@@ -837,12 +880,6 @@ display: none;
     .header {
         padding: 2rem 2%;
       }
-
-      .header .logo
-        {
-            font-size: 1.4rem;
-        }
-
 
     .header {
         padding: 2rem 4%;
@@ -883,10 +920,6 @@ display: none;
 
     html {
       font-size: 50%;
-    }
-  
-    .logo {
-      font-size: 2rem;
     }
 
     .home {

@@ -1,0 +1,206 @@
+Node.js, Chrome'un V8 JavaScript motoru üzerine inşa edilmiş, sunucu tarafında JavaScript çalıştırmaya olanak tanıyan açık kaynaklı bir çalışma ortamıdır.
+
+Özellikleri ve Kullanım Alanları:
+Sunucu Tarafında JavaScript:
+
+Node.js, JavaScript'in yalnızca tarayıcıda değil, sunucu tarafında da çalışmasını sağlar.
+Asenkron ve Olay Tabanlı:
+
+Node.js, asenkron yapısı sayesinde yüksek performanslı, ölçeklenebilir uygulamalar geliştirmek için idealdir.
+Hızlı ve Verimli:
+
+V8 motoru sayesinde hızlıdır ve I/O işlemlerini etkin bir şekilde yönetir.
+Modüler Yapı:
+
+Node.js, geniş bir modül ekosistemi sunan npm (Node Package Manager) ile birlikte gelir.
+Kullanım Alanları:
+Web Sunucuları: RESTful API'ler ve gerçek zamanlı uygulamalar (ör. sohbet uygulamaları).
+Mikroservisler: Küçük, bağımsız hizmetler geliştirmek için.
+Gerçek Zamanlı Uygulamalar: WebSocket ile çalışan uygulamalar.
+CLI Araçları: Komut satırı araçları geliştirmek için.
+Node.js, özellikle yüksek performans ve ölçeklenebilirlik gerektiren projelerde tercih edilir.
+
+Node.js:
+
+Chrome'un V8 JavaScript motoru üzerine inşa edilmiş, sunucu tarafında JavaScript çalıştırmaya olanak tanıyan açık kaynaklı bir çalışma ortamıdır.
+V8 JavaScript Motoru:
+
+Google tarafından geliştirilen, JavaScript'i makine diline çevirerek hızlı bir şekilde çalıştıran bir motor. Chrome tarayıcısında ve Node.js'de kullanılır.
+Sunucu Tarafında JavaScript:
+
+JavaScript'in yalnızca tarayıcıda değil, sunucuda da çalıştırılabilmesini ifade eder. Bu, web uygulamalarının arka ucunda JavaScript kullanmayı mümkün kılar.
+Asenkron:
+
+İşlemlerin sırayla değil, aynı anda (eşzamanlı) çalışmasını sağlayan bir programlama modeli. Node.js, asenkron yapısıyla yüksek performans sunar.
+Olay Tabanlı:
+
+Uygulamanın, belirli olaylar (örneğin, bir kullanıcı isteği veya bir dosya okuma işlemi) gerçekleştiğinde tepki vermesi üzerine kurulu bir model.
+I/O İşlemleri:
+
+Giriş/Çıkış işlemleri anlamına gelir. Örneğin, dosya okuma/yazma, ağ üzerinden veri gönderme/alma gibi işlemler.
+Modüler Yapı:
+
+Uygulamanın farklı işlevlerini küçük, bağımsız modüller halinde geliştirme yaklaşımı. Node.js'de bu modüller require ile dahil edilir.
+npm (Node Package Manager):
+
+Node.js için bir paket yöneticisidir. Geliştiricilerin projelerinde kullanabilecekleri açık kaynaklı kütüphaneleri ve araçları içerir.
+RESTful API:
+
+Web servisleri oluşturmak için kullanılan bir mimari stil. HTTP protokolü üzerinden veri alışverişi yapılmasını sağlar.
+Gerçek Zamanlı Uygulamalar:
+
+Kullanıcıların anlık olarak veri alışverişi yapabildiği uygulamalar. Örneğin, sohbet uygulamaları veya canlı bildirim sistemleri.
+WebSocket:
+
+Sunucu ile istemci arasında çift yönlü, sürekli bir bağlantı kurmayı sağlayan bir protokol. Gerçek zamanlı uygulamalarda kullanılır.
+Mikroservisler:
+
+Büyük bir uygulamayı, birbirinden bağımsız olarak çalışabilen küçük hizmetlere bölme yaklaşımı. Bu, ölçeklenebilirliği ve bakımı kolaylaştırır.
+CLI Araçları (Command Line Interface):
+
+Komut satırında çalışan araçlar. Örneğin, terminal üzerinden çalışan bir uygulama veya otomasyon aracı.
+Ölçeklenebilirlik:
+
+Bir sistemin, artan kullanıcı veya işlem yüküne uyum sağlayabilme kapasitesi.
+
+V8 motoru ile Node.js arasındaki ilişki şu şekildedir:
+
+/*******************************/
+
+V8 Motoru, Google tarafından geliştirilen bir JavaScript çalışma motorudur. JavaScript kodunu makine koduna çevirerek çalıştırır.
+Node.js, V8 motorunu temel alarak geliştirilmiş bir çalışma ortamıdır. Node.js, V8 motorunu kullanarak JavaScript'i tarayıcı dışında, sunucu tarafında çalıştırır.
+
+İlişki:
+V8 motoru, Node.js'in temelini oluşturur. Node.js, JavaScript kodlarını çalıştırmak için V8 motorunu kullanır.
+
+Node.js, V8 motorunun üzerine ek özellikler ekler:
+Dosya sistemi erişimi (fs modülü)
+Ağ işlemleri (http, net modülleri)
+Modül yönetimi (require ve npm)
+
+Özet:
+V8, JavaScript kodunu çalıştıran bir motor.
+Node.js, V8 motorunu kullanarak JavaScript'i sunucu tarafında çalıştıran bir platformdur. Yani, Node.js V8 motorunun üzerinde çalışır.
+
+/*******************************/
+
+Node.js hakkında bilmeniz gereken diğer önemli konular şunlardır:
+
+1. Asenkron ve Olay Tabanlı Yapı
+Node.js, asenkron ve olay tabanlı bir yapıya sahiptir. Bu, işlemlerin bloklanmadan (non-blocking) çalışmasını sağlar.
+Örneğin, bir dosya okuma işlemi tamamlanmadan diğer işlemler devam eder.
+2. Tek İş Parçacığı (Single-Threaded)
+Node.js, tek bir iş parçacığı üzerinde çalışır. Ancak, arka planda libuv kütüphanesi sayesinde I/O işlemlerini verimli bir şekilde yönetir.
+3. Modül Sistemi
+Node.js, modüler bir yapıya sahiptir. Yerleşik modüller (örneğin fs, http) ve üçüncü taraf modüller (npm ile yüklenen) kullanılabilir.
+Modüller, require ile projeye dahil edilir.
+4. npm (Node Package Manager)
+Node.js ile birlikte gelen bir paket yöneticisidir.
+npm, açık kaynaklı kütüphaneleri ve araçları kolayca indirip projeye entegre etmenizi sağlar.
+5. REST API Geliştirme
+Node.js, RESTful API'ler geliştirmek için sıkça kullanılır. Express.js gibi çerçeveler bu süreçte yardımcı olur.
+6. Event Loop
+Node.js'in temelinde Event Loop bulunur. Bu mekanizma, asenkron işlemleri yönetir ve olayları sırayla işler.
+7. Popüler Kullanım Alanları
+Gerçek Zamanlı Uygulamalar: Chat uygulamaları, oyun sunucuları.
+API Sunucuları: REST veya GraphQL tabanlı API'ler.
+CLI Araçları: Komut satırı araçları geliştirme.
+Mikroservisler: Küçük, bağımsız hizmetler oluşturma.
+8. Performans ve Ölçeklenebilirlik
+Node.js, yüksek performanslı ve ölçeklenebilir uygulamalar geliştirmek için uygundur. Özellikle I/O ağırlıklı işlemlerde etkilidir.
+9. Popüler Framework ve Araçlar
+Express.js: Web uygulamaları ve API'ler için minimal bir çerçeve.
+NestJS: TypeScript tabanlı, ölçeklenebilir bir framework.
+Socket.IO: Gerçek zamanlı iletişim için kullanılan bir kütüphane.
+10. Kısıtlamalar
+CPU yoğunluklu işlemler için Node.js ideal değildir, çünkü tek iş parçacığı üzerinde çalışır.
+Büyük ve karmaşık uygulamalarda dikkatli bir yapılandırma gerektirir.
+/*******************************/
+Web Server Nedir?
+Web Server (Web Sunucusu), istemcilerden (genellikle tarayıcılardan) gelen HTTP(S) isteklerini alır ve yanıtlar.
+Statik dosyalar (HTML, CSS, JS) veya dinamik içerik sunabilir.
+Örnek: Apache, Nginx, IIS, Node.js (Express.js ile).
+
+API Nedir?
+API (Application Programming Interface), bir uygulamanın başka bir uygulama ile iletişim kurmasını sağlayan bir arayüzdür.
+Web API, genellikle HTTP protokolü üzerinden çalışan bir API türüdür.
+JSON veya XML gibi formatlarda veri sağlar.
+Örnek: REST API, GraphQL API.
+
+Aralarındaki Farklar:
+Web Server	                        API
+Web tarayıcılarına içerik sunar.	Uygulamalar arasında veri alışverişi sağlar.
+Statik veya dinamik içerik sunabilir.	Genellikle sadece veri sağlar (ör. JSON).
+Kullanıcı arayüzü sunabilir.	Kullanıcı arayüzü sunmaz, sadece veri sağlar.
+Örnek: HTML sayfası döndürür.	Örnek: JSON formatında kullanıcı bilgisi döndürür.
+İnsanlar tarafından doğrudan kullanılır.	Uygulamalar tarafından kullanılır.
+
+Özet:
+Web Server, istemcilere (tarayıcılar) içerik sunar.
+API, uygulamalar arasında veri alışverişi için bir arayüz sağlar. Web sunucusu, API'yi barındırabilir. Örneğin, bir web sunucusu hem HTML sayfalarını hem de bir REST API'yi aynı anda sunabilir.
+
+
+/*******************************/
+
+taryıcı ile sunucu bağlantısı nasıl gerçekleşir
+
+GitHub Copilot
+Tarayıcı ile sunucu arasındaki bağlantı, HTTP (Hypertext Transfer Protocol) veya HTTPS (HTTP Secure) protokolü üzerinden gerçekleşir. İşte bu sürecin adımları:
+
+1. Kullanıcının Bir URL Girmesi
+Kullanıcı tarayıcıya bir URL (ör. https://example.com) girer veya bir bağlantıya tıklar.
+Tarayıcı, bu URL'yi analiz ederek hangi sunucuya bağlanması gerektiğini belirler.
+2. DNS Sorgusu
+Tarayıcı, URL'deki alan adını (ör. example.com) bir IP adresine çevirmek için bir DNS (Domain Name System) sorgusu yapar.
+Örneğin, example.com -> 93.184.216.34.
+3. Sunucuya Bağlantı (TCP/IP)
+Tarayıcı, IP adresini aldıktan sonra sunucuya bir TCP (Transmission Control Protocol) bağlantısı kurar.
+HTTPS kullanılıyorsa, bu aşamada TLS/SSL el sıkışması (handshake) gerçekleşir ve bağlantı şifrelenir.
+4. HTTP İsteği Gönderme
+Tarayıcı, sunucuya bir HTTP isteği gönderir. Örneğin:
+GET: İstenen kaynağın türünü belirtir (ör. bir HTML dosyası).
+Host: Hangi web sitesine bağlanıldığını belirtir.
+5. Sunucunun Yanıt Vermesi
+Sunucu, tarayıcının isteğini alır ve işleyerek bir HTTP yanıtı döner. Örneğin:
+Yanıt, istenen kaynağı (ör. bir HTML dosyasını) içerir.
+6. Tarayıcının Yanıtı İşlemesi
+Tarayıcı, sunucudan gelen yanıtı alır ve içeriği işler:
+HTML dosyasını işler.
+CSS ve JavaScript dosyalarını yüklemek için ek HTTP istekleri gönderir.
+Sayfayı kullanıcıya gösterir.
+Özet:
+Kullanıcı bir URL girer.
+DNS sorgusu ile alan adı bir IP adresine çevrilir.
+Tarayıcı, sunucuya TCP/IP bağlantısı kurar.
+HTTP isteği gönderilir.
+Sunucu, HTTP yanıtı döner.
+Tarayıcı, yanıtı işler ve kullanıcıya gösterir.
+
+/*******************************/
+Web sunucu üzerinden site yayınlama
+
+AWS Sunucusu Kiralama ve Statik IP Adresi Atama
+
+AWS gibi bir hizmet sağlayıcıdan bir sunucu (ör. EC2 instance) kiraladınız.
+AWS, sunucunuza otomatik olarak bir Elastic IP (statik IP adresi) atar.
+Alan Adı Satın Alma
+
+Bir alan adı kayıt şirketinden (ör. GoDaddy, Namecheap) veya AWS'nin Route 53 hizmetinden bir alan adı satın aldınız.
+DNS Yönetim Paneline Erişim
+
+Alan adını satın aldığınız platformun DNS yönetim paneline giriş yapın.
+Eğer alan adını AWS Route 53 üzerinden aldıysanız, AWS Console'da Route 53 → Hosted Zones bölümüne gidin.
+A Kaydı (Address Record) Oluşturma
+
+DNS yönetim panelinde bir A Kaydı ekleyin:
+Host (Name): @ veya boş bırakın (kök alan adı için).
+Value (IP Address): AWS sunucunuzun Elastic IP adresini girin.
+TTL (Time to Live): Varsayılan değeri (ör. 300 saniye) kullanabilirsiniz.
+Değişikliklerin Yayılmasını Bekleme
+
+DNS değişiklikleri genellikle birkaç dakika ile birkaç saat arasında yayılır.
+Bu süre sonunda, alan adınız AWS sunucunuzun IP adresine yönlendirilmiş olur.
+Alan Adını Test Etme
+
+Tarayıcınıza alan adınızı (ör. example.com) girerek test edin.
+Eğer her şey doğru yapılandırıldıysa, alan adınız AWS sunucunuzdaki içeriği gösterecektir.

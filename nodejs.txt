@@ -177,6 +177,7 @@ Sunucu, HTTP yanıtı döner.
 Tarayıcı, yanıtı işler ve kullanıcıya gösterir.
 
 /*******************************/
+
 Web sunucu üzerinden site yayınlama
 
 AWS Sunucusu Kiralama ve Statik IP Adresi Atama
@@ -204,3 +205,17 @@ Alan Adını Test Etme
 
 Tarayıcınıza alan adınızı (ör. example.com) girerek test edin.
 Eğer her şey doğru yapılandırıldıysa, alan adınız AWS sunucunuzdaki içeriği gösterecektir.
+
+/*******************************/
+
+RESTful Servisler
+REST (Representational State Transfer), web servisleri oluşturmak için kullanılan bir mimari stildir.
+RESTful Servisler, HTTP protokolünü kullanarak veri alışverişi yapar.
+GET: Veri almak için.
+POST: Veri oluşturmak için.
+PUT: Veri güncellemek için.
+DELETE: Veri silmek için.
+
+Örnek: Bir kullanıcı API'si:
+GET /users: Tüm kullanıcıları getirir.
+POST /users: Yeni bir kullanıcı oluşturur.
